@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVD</title>
+
+    <style>
+	
+	
+        body {
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+            text-align: center;
+            font-family: Arial;
+			font-weight: bold;
+            background-image: url("bg.jpg");
+			background-repeat: repeat-x; 
+		    background-repeat: repeat-y;
+			max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+		
+		
+		
+		
+
+        .expo img {
+            width: 230px;
+            margin-top: 20px;
+        }
+
+        .fp {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .frame {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .fpmiku img {
+		 bottom: 50.9%;
+		 width: 120%;
+		 left: 92.8%;
+			margin: 0 auto;
+            display: block;
+        filter: drop-shadow(-1px 10px 15px rgba(0, 0, 0, 0.5))
+		}
+
+        .fp_title {
+            font-size: 170px;
+            margin-top: 10px;
+			color: red;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        @media (max-width: 768px) {
+            .fp_title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="expo">
+        <img src="liveexpowhite.png" alt="LIVE EXPO">
+    </div>
+
+    <a class="fp" href="mixx.html">
+        <div class="frame"></div>
+        <div class="fpmiku">
+            <img src="box.png">
+        </div>
+        <div class="fp_title">
+            <p>Click to open box</p>
+        </div>
+    </a>
+
+</body>
+</html>

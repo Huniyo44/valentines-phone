@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVD!</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+			background-repeat: repeat-x; 
+		    background-repeat: repeat-y;
+			max-width: 100%;
+		}
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .valday2 img {
+        position: absolute;
+		    left: 13%;
+			width: 350px;
+        bottom: 75%;
+		margin-top: 20px;
+			
+        }
+
+        .fpnote img {
+		position: absolute;
+		bottom: 45%;
+		width: 46%;
+		left: 2%;
+		 box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+		
+            margin: 20px auto;
+            display: block;
+        }
+		
+		.fpgraynobg img {
+         position: absolute;
+		bottom: 50.9%;
+		width: 56%;
+		left: 92.8%;
+		transform: translateX(-50%);
+     transition: transform 0.4s ease-in-out;
+	z-index:3;
+            margin: 20px auto;
+            display: block;
+			filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5))
+		}
+		
+		.fpgraynobg active {
+     transition: transform 0.4s ease-in-out;
+	z-index:3;
+		}
+		
+		
+		
+		.fpgray img {
+        position: absolute;
+		width: 67%;
+		  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+		bottom:50.9%;
+		 filter: brightness(70%);
+		left: 50%;
+            margin: 20px auto;
+            display: block;
+			}
+
+        audio {
+		position: absolute;
+		filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+	    bottom: 44.5%;
+        left: 52%;
+            width: 65%;
+            margin-top: 20px;
+        }
+		
+		 
+		
+		
+    </style>
+</head>
+
+<body>
+
+    <div class="valday2">
+        <img src="liveexpowhite.png" alt="LIVE EXPO">
+    </div>
+
+    <a class="fp" href="index.html">
+        <div class="fpnote">
+            <img src="note.png">
+        </div>
+        <div class="fpgray">
+            <img src="graywbg.png">
+        </div>
+        <div class="fpgraynobg">
+            <img src="graynobg.png">
+        </div>
+    </a>
+
+    <div class="fpsong">
+        <audio controls>
+            <source src="song.mp3">
+        </audio>
+    </div>
+
+</body>
+</html>
